@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 46px;
+    position: fixed;
+    background-color: #000;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+#nav__list{
+    list-style: none;
+    display: flex;
+}
+.nav__list-item{
+    position: relative;
+}
+.nav__list-item-link{
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav__list-item:hover .nav__list-item-link{
+    background-color: #fff;
+    color: #000;
+}
+#subnav__list{
+    position: absolute;
+    display: none;
+    list-style: none;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.subnav__list-item{
+    min-width: 160px;
+    background-color: #fff;
+}
+.subnav__list-item:hover{
+    background-color: #ccc;
+}
+.subnav__list-item-link{
+    text-decoration: none;
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+.nav__list-item:hover #subnav__list{
+    display: block;
+}
+#subnav{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 70%;
+    left: 162px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.subnav-item{
+    min-width: 160px;
+    background-color: #fff;
+}
+.subnav-item-link{
+    text-decoration: none;
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    display: block;
+}
+.subnav-item-link:hover{
+    background-color: #ccc;
+}
+.subnav__list-item:hover #subnav{
+    display: block;
+}
+#slider {
+    padding-top: 50%;
+    margin-top: 46px;
+    position: relative;
+    background: url('./chicago.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 0 1px #000;
+}
+#slider .text-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content{
+
+}
+.content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.section-sub-heading{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+}
+.about-text{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+.member-list{
+    width: 924px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.member-name {
+    font-size: 15px;
+    text-align: center;
+}
+
+.member-avt {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.contact-content {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-content .contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info p i{
+    margin-right: 8px;
+}
+.contact-info a {
+    color: #101aef;
+    opacity: 0.7;
+}
+.contact-info a:hover{
+    opacity: 1;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+input{
+    outline: none;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.btn{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    float: right;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+}
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
